@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
 
-    <title>Age calculator app</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
-  </head>
+        <title>Age calculator app</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js" defer></script>
+    </head>
 
-  <body>
-    Day DD Month MM Year YYYY -- years -- months -- days
-  </body>
+    <body>
+        <div class="card">
+            <div class="container">
+                <form>
+                    <div class="input-container">
+                        <div class="block">
+                            <label for="dia">Dia</label>
+                            <input type="number" id="dia" placeholder="DD" />
+                            <small></small>
+                        </div>
+
+                        <div class="block">
+                            <label for="mes">Mes</label>
+                            <input type="number" id="mes" placeholder="MM" />
+                            <small></small>
+                        </div>
+
+                        <div class="block">
+                            <label for="ano">Ano</label>
+                            <input type="number" id="ano" placeholder="AA" />
+                            <small></small>
+                        </div>
+                    </div>
+
+                    <div class="submit-block">
+                        <hr>
+                        <button type="submit" class="submit-btn"><img src="assets\images\icon-arrow.svg" alt="icon"></button>
+                    </div>
+                </form>
+
+                <div class="resposta">
+                    <h1><span id="AA">--</span>anos</h1>
+                    <h1><span id="MM">--</span>meses</h1>
+                    <h1><span id="DD">--</span>dias</h1>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
